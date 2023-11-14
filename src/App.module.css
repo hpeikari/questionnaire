@@ -1,0 +1,21 @@
+@import './cssVariables.css';
+
+.appStyles {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+
+  .headerTitle {
+    font-size: 22px;
+    color: var(--white);
+    background-color: var(--fueled-red); 
+    border: 0;
+    font-weight: 700;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+    outline: none;
+  }  
+}
+

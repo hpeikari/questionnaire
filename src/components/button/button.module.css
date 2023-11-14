@@ -1,0 +1,37 @@
+@import '../../cssVariables.css';
+
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border: 0;
+    cursor: pointer;
+    height: 30px;
+    padding: 8px;
+    gap: 10px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 13px;
+    text-align: center;
+    text-transform: uppercase;
+
+    &:disabled,
+    &:disabled:focus,
+    &:disabled:hover {
+      background-color: gray;
+      cursor: not-allowed;
+    }
+}
+
+.primary {
+    color: var(--white);
+    background-color: var(--fueled-red);
+}
+
+.secondary {
+    color: var(--fueled-red);
+    background-color: var(--white);
+    border: 1px solid rgba(0, 0, 0, 0.10);
+}

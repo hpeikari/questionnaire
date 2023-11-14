@@ -1,0 +1,87 @@
+@import '../../cssVariables.css';
+
+.container {
+  padding-top: 32px;
+  flex: 1 1 auto;
+  background: var(--fueled-white);
+  justify-content: center;
+  display: flex;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  min-width: 250px;
+  max-width: 600px;
+}
+
+.cardStyle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  padding: 24px;
+  margin-bottom: 16px;
+  gap: 16px;
+  background: var(--white);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+}
+
+.addOption {
+  width: 100%;
+}
+
+.divider {
+  height: 1px;
+  align-self: stretch;
+  background-color: var(--fueled-white);
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  .pageNumber {
+    color: var(--black);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+  }
+  
+  .deleteIcon {
+    cursor: pointer;
+
+    &:active {
+      background-color: gray;
+    }
+  }
+}
+
+.saveBtn {
+  margin: 16px 0;
+}
+
+.emptyMsg {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.checkboxWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .checkbox {
+    margin-right: 8px;
+  }
+}
+
+.deleteOption {
+  cursor: pointer;
+}

@@ -1,0 +1,31 @@
+@import '../../cssVariables.css';
+
+.AppHeader {
+  background-color: var(--fueled-red);
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0 1 auto;
+}
+
+.container {
+  padding: 0 12px;
+}
+
+.rightContainer {
+  text-align: right;
+
+  .loginBtn {
+    background: rgba(245, 245, 241, 0.20);
+  }
+}
+
+.email {
+  color: var(--fueled-white); 
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: right;
+  padding: 0 20px;
+}
